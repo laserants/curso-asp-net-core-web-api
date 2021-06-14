@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movies.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Movies.WebApi.Controllers.MoviesController.GetMoviesAsync(System.String,System.String)">
+            <summary>
+            Get movies.
+            </summary>
+            <remarks>
+            If you didn't send paramaters the endpoint will return all movies.
+            </remarks>
+            <param name="title">Movie title is optional</param>
+            <param name="director">Movie director is optional</param>
+        </member>
+        <member name="M:Movies.WebApi.Controllers.MoviesController.GetMovieAsync(System.Int32)">
+            <summary>
+            Get a movie by Id.
+            </summary>
+            <remarks>
+            Send the Id in URI.
+            </remarks>
+            <param name="id">Movie Id is required</param>
+        </member>
+        <member name="M:Movies.WebApi.Controllers.MoviesController.CreateMovieAsync(Movies.Core.Entities.Movie)">
+            <summary>
+            Create a movie.
+            </summary>
+            <remarks>
+            Send the Movie data in HTTP Request's body as JSON.
+            </remarks>
+        </member>
+        <member name="M:Movies.WebApi.Controllers.MoviesController.UpdateMovieAsync(System.Int32,Movies.Core.Entities.Movie)">
+            <summary>
+            Update a movie.
+            </summary>
+            <remarks>
+            Send the Movie data in HTTP Request's body as JSON.
+            URI Id and Movie Id within JSON should match.
+            </remarks>
+            <param name="id">Movie Id is required</param>
+        </member>
+        <member name="M:Movies.WebApi.Controllers.MoviesController.DeleteMovieAsync(System.Int32)">
+            <summary>
+            Delete a movie by Id.
+            </summary>
+            <remarks>
+            Send the Id in URI.
+            </remarks>
+            <param name="id">Movie Id is required</param>
+        </member>
+    </members>
+</doc>
