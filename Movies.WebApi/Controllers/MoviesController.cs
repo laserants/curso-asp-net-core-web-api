@@ -127,7 +127,7 @@ namespace Movies.WebApi.Controllers
             {
                 return NotFound($"Movie with Id = {id} not found");
             }
-            return Ok("Movie with Id = {id} deleted");
+            return Ok($"Movie with Id = {id} deleted");
         }
     }
 }
