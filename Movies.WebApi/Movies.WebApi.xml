@@ -4,7 +4,7 @@
         <name>Movies.WebApi</name>
     </assembly>
     <members>
-        <member name="M:Movies.WebApi.Controllers.MoviesController.GetMoviesAsync(System.String,System.String)">
+        <member name="M:Movies.WebApi.Controllers.MoviesController.GetMoviesAsync(System.String)">
             <summary>
             Get movies.
             </summary>
@@ -12,7 +12,6 @@
             If you didn't send paramaters the endpoint will return all movies.
             </remarks>
             <param name="title">Movie title</param>
-            <param name="director">Movie director</param>
         </member>
         <member name="M:Movies.WebApi.Controllers.MoviesController.GetMovieAsync(System.Int32)">
             <summary>
@@ -40,6 +39,7 @@
             URI Id and Movie Id within JSON should match.
             </remarks>
             <param name="id">Movie Id</param>
+            <param name="movie">Movie Data</param>
         </member>
         <member name="M:Movies.WebApi.Controllers.MoviesController.DeleteMovieAsync(System.Int32)">
             <summary>
